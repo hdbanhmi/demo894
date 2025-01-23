@@ -1,11 +1,11 @@
 package com.example.demo894.data;
 
-public class car {
+public class Car {
     String plateNumber;
     String brand;
     int price;
 
-    public car(String plateNumber, String brand, int price) {
+    public Car(String plateNumber, String brand, int price) {
         this.plateNumber = plateNumber;
         this.brand = brand;
         this.price = price;
