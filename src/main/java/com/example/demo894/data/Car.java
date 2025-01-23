@@ -1,7 +1,7 @@
 
 package com.example.demo894.data;
 
-public class Car {
+public class Car{
     String plateNumber;
     String brand;
     int price;
