@@ -1,18 +1,24 @@
 package com.example.demo894.web;
 
-import com.example.demo894.data.Car;
-import org.slf4j.LoggerFactory;
-import org.slf4j.Logger;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo894.data.Car;
 
 @RestController
 public class RentalWebService {
 
     Logger logger = LoggerFactory.getLogger(RentalWebService.class);
-    List<Car> cars = new ArrayList<Car>();
+    List<Car> cars = new ArrayList<>();
 
     public RentalWebService(){
         cars.add(new Car("AA11BB", "Ferrari", 1000));
